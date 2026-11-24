@@ -13,10 +13,8 @@
   1. 本文件是“单文件网页”，双击 index.html 即可用浏览器打开，
      不联网也能看（字体联网时更好看，断网自动用系统字体）。
   2. 直接用 记事本 / VS Code 打开本文件，搜索对应文字即可修改。
-  3. 证件照：目前是占位框。找到下面 <div class="photo"> 那一块，
-     把里面的内容替换成：
-        <img src="photo.jpg" alt="证件照">
-     然后把照片文件 photo.jpg 放到本文件同一目录下即可。
+  3. 证件照：已内嵌照片 photo.png。要换照片，直接用同名文件覆盖
+     photo.png 即可（或用记事本改 <img src="..."> 的地址）。
   4. 自我评价：搜索“自我评价”即可找到四段文字，直接改。
   ============================================================
 -->
@@ -123,16 +121,12 @@
     padding:18px; display:flex; flex-direction:column; align-items:center; gap:10px;
     justify-self:end;
   }
-  .photo-frame{
+  .photo-img{
     width:190px; height:240px; border-radius:8px;
-    background:repeating-linear-gradient(45deg,#f4f8fa,#f4f8fa 12px,#eef3f6 12px,#eef3f6 24px);
-    border:1px dashed #b9ccd8;
-    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
-    color:#93a7b3;
+    object-fit:cover; object-position:50% 18%;
+    border:1px solid var(--line); background:#eef3f6;
+    display:block;
   }
-  .photo-frame .ic{ width:44px; height:44px; }
-  .photo-frame b{ font-size:14px; color:var(--muted); font-weight:600; }
-  .photo-frame span{ font-size:12px; }
   .photo-caption{ font-size:12px; color:var(--muted); text-align:center; }
 
   /* ---------- 通用 Section ---------- */
@@ -360,12 +354,8 @@
       </div>
     </div>
     <div class="photo">
-      <div class="photo-frame">
-        <span class="ic"><svg><use href="#i-id"/></svg></span>
-        <b>证件照</b>
-        <span>替换为本人照片</span>
-      </div>
-      <div class="photo-caption">将照片文件命名为 photo.jpg<br>放到本文件同目录即可显示</div>
+      <img class="photo-img" src="photo.png" alt="史煜暄证件照">
+      <div class="photo-caption">史煜暄 · 证件照</div>
     </div>
   </div>
 </section>
