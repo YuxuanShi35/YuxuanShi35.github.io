@@ -243,6 +243,9 @@
   .ri-tags span{ font-size:13px; color:var(--muted); background:var(--light); border:1px solid var(--line); border-radius:6px; padding:3px 9px; }
   .ri-work{ font-size:14.5px; color:var(--ink); margin-top:8px; }
   .ri-work b{ color:var(--navy); }
+  .ri-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px; flex-wrap:wrap; }
+  .badge.cat{ background:var(--navy); color:#fff; letter-spacing:.02em; }
+  .ri-time{ font-family:var(--serif); font-weight:700; color:var(--blue); font-size:15px; white-space:nowrap; }
 
   /* ---------- 荣誉 ---------- */
   .honor-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
@@ -333,11 +336,11 @@
     </div>
     <nav class="topnav">
       <a href="#profile">基本信息</a>
+      <a href="#about">自我评价</a>
       <a href="#overview">个人概述</a>
       <a href="#education">教育背景</a>
       <a href="#research">科研经历</a>
       <a href="#honors">主要荣誉</a>
-      <a href="#about">自我评价</a>
     </nav>
   </div>
 </header>
@@ -405,10 +408,26 @@
     </div>
   </section>
 
-  <!-- ============ 02 个人概述 ============ -->
-  <section class="section" id="overview">
+  <!-- ============ 02 自我评价 ============ -->
+  <section class="section" id="about">
     <div class="sec-head">
       <span class="sec-num">02</span>
+      <h2 class="sec-title">自我评价</h2>
+      <span class="sec-en">About Me</span>
+    </div>
+    <div class="sec-rule"></div>
+    <div class="about-card">
+      <p><span class="p-num">01</span>一心学医、信念坚定的<span class="kw">赶路人</span>，敬畏生命、热爱医学，深知医路漫长却始终坚定，愿以恒心与仁心踏实地走好每一步。</p>
+      <p><span class="p-num">02</span>学业扎实、精益求精的<span class="kw">笃学者</span>，基础牢固、勤学善思，成绩优异、名列前茅，专业功底深厚、视野开阔，勤勉自律、追求卓越。</p>
+      <p><span class="p-num">03</span>敢想敢为、脚踏实地的<span class="kw">求真者</span>，勤于动手、善于钻研，注重方法、严谨求实，在文献与实验中不断打磨与锤炼科学思维。</p>
+      <p><span class="p-num">04</span>乐于奉献、善于统筹的<span class="kw">领头雁</span>，勇挑重担、以身作则，善于团结同学、凝聚团队，乐于助人、待人真诚，用责任心服务师生。</p>
+    </div>
+  </section>
+
+  <!-- ============ 03 个人概述 ============ -->
+  <section class="section" id="overview">
+    <div class="sec-head">
+      <span class="sec-num">03</span>
       <h2 class="sec-title">个人概述</h2>
       <span class="sec-en">Overview</span>
     </div>
@@ -450,10 +469,10 @@
     </div>
   </section>
 
-  <!-- ============ 03 教育背景 ============ -->
+  <!-- ============ 04 教育背景 ============ -->
   <section class="section" id="education">
     <div class="sec-head">
-      <span class="sec-num">03</span>
+      <span class="sec-num">04</span>
       <h2 class="sec-title">教育背景</h2>
       <span class="sec-en">Education</span>
     </div>
@@ -469,16 +488,16 @@
       <div class="stats">
         <div class="stat"><div class="k">平均绩点</div><div class="v">4.1 / 5.0</div></div>
         <div class="stat"><div class="k">绩点排名</div><div class="v">28 / 386</div></div>
-        <div class="stat"><div class="k">综测排名</div><div class="v" style="font-size:17px">连续两学年<br>前 20%</div><div class="s">2025–2026 学年前 5%</div></div>
+        <div class="stat"><div class="k">综测排名</div><div class="v">前 5%</div><div class="s">2025–2026 学年<br>连续两学年 前 20%</div></div>
         <div class="stat"><div class="k">英语水平</div><div class="v">CET-6 460</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ 04 科研经历 ============ -->
+  <!-- ============ 05 科研经历 ============ -->
   <section class="section" id="research">
     <div class="sec-head">
-      <span class="sec-num">04</span>
+      <span class="sec-num">05</span>
       <h2 class="sec-title">科研经历</h2>
       <span class="sec-en">Research</span>
     </div>
@@ -486,71 +505,49 @@
     <div class="research-list">
 
       <div class="research-item">
-        <div class="ri-top">
-          <span class="ri-idx">A</span>
-          <div class="ri-body">
-            <div class="ri-title">Scoparone 在宫颈癌细胞中的作用</div>
-            <div class="ri-meta"><span class="badge">实验室科研</span></div>
-            <div class="ri-work"><b>主要工作：</b>细胞传代、细胞计数、配药、记录实验数据等</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="research-item hl">
-        <div class="ri-top">
-          <span class="ri-idx">B</span>
-          <div class="ri-body">
-            <div class="ri-title">“肺”跃先机——特发性肺纤维化（IPF）早筛试剂盒</div>
-            <div class="ri-meta">
-              <span class="badge win">中国国际大学生创新创业大赛 · 院级三等奖（2025、2026 连续两年）</span>
-              <span class="badge role">项目负责人 / 核心成员</span>
-            </div>
-            <div class="ri-work"><b>主要工作：</b>项目答辩、制作 PPT、撰写标书、撰写专利等</div>
-          </div>
-        </div>
+        <div class="ri-head"><span class="badge cat">实验室经历</span><span class="ri-time">2024 年</span></div>
+        <div class="ri-title">Scoparone 在宫颈癌细胞中的作用</div>
+        <div class="ri-work"><b>主要工作：</b>细胞传代、细胞计数、配药、记录实验数据等</div>
       </div>
 
       <div class="research-item">
-        <div class="ri-top">
-          <span class="ri-idx">C</span>
-          <div class="ri-body">
-            <div class="ri-title">探讨 ACOD1 及其催化产物衣康酸在肥胖加重巨噬细胞极化和急性肺损伤中的作用</div>
-            <div class="ri-meta">
-              <span class="badge first">第一临床学院首届“芝麻杯”创新创业比赛 · 校级答辩第 1 名</span>
-            </div>
-            <div class="ri-work"><b>主要工作：</b>阅读、整理和总结文献信息等</div>
-          </div>
+        <div class="ri-head"><span class="badge cat">竞赛项目</span><span class="ri-time">2024 年</span></div>
+        <div class="ri-title">探讨 ACOD1 及其催化产物衣康酸在肥胖加重巨噬细胞极化和急性肺损伤中的作用</div>
+        <div class="ri-meta">
+          <span class="badge first">第一临床学院首届“芝麻杯”创新创业比赛 · 校级答辩第 1 名</span>
         </div>
+        <div class="ri-work"><b>主要工作：</b>阅读、整理和总结文献信息等</div>
       </div>
 
       <div class="research-item hl">
-        <div class="ri-top">
-          <span class="ri-idx">D</span>
-          <div class="ri-body">
-            <div class="ri-title">在投范围综述（第一作者 / 通讯作者）<span class="en">Scoring systems in the diagnosis of heart failure with preserved ejection fraction: A scoping review</span></div>
-            <div class="ri-meta"><span class="badge role">第一作者 / 通讯作者</span></div>
-            <div class="ri-work"><b>主要贡献：</b>选题、筛选文献、制作文献特征表、撰写文章等</div>
-          </div>
+        <div class="ri-head"><span class="badge cat">大创项目</span><span class="ri-time">2025 年至今</span></div>
+        <div class="ri-title">“肺”跃先机——特发性肺纤维化（IPF）早筛试剂盒</div>
+        <div class="ri-meta">
+          <span class="badge win">中国国际大学生创新创业大赛 · 院级三等奖（2025、2026 连续两年）</span>
+          <span class="badge role">项目负责人 / 核心成员</span>
         </div>
+        <div class="ri-work"><b>主要工作：</b>项目答辩、制作 PPT、撰写标书、撰写专利等</div>
+      </div>
+
+      <div class="research-item hl">
+        <div class="ri-head"><span class="badge cat">论文</span><span class="ri-time">2026 年</span></div>
+        <div class="ri-title">在投范围综述（第一作者 / 通讯作者）<span class="en">Scoring systems in the diagnosis of heart failure with preserved ejection fraction: A scoping review</span></div>
+        <div class="ri-meta"><span class="badge role">第一作者 / 通讯作者</span></div>
+        <div class="ri-work"><b>主要贡献：</b>选题、筛选文献、制作文献特征表、撰写文章等</div>
       </div>
 
       <div class="research-item">
-        <div class="ri-top">
-          <span class="ri-idx">E</span>
-          <div class="ri-body">
-            <div class="ri-title">其他</div>
-            <div class="ri-work">多次担任组长，主持 PBL、期末汇报等</div>
-          </div>
-        </div>
+        <div class="ri-head"><span class="badge cat">其他</span><span class="ri-time">在校期间</span></div>
+        <div class="ri-work">多次担任组长，主持 PBL、期末汇报等</div>
       </div>
 
     </div>
   </section>
 
-  <!-- ============ 05 主要荣誉 ============ -->
+  <!-- ============ 06 主要荣誉 ============ -->
   <section class="section" id="honors">
     <div class="sec-head">
-      <span class="sec-num">05</span>
+      <span class="sec-num">06</span>
       <h2 class="sec-title">主要荣誉</h2>
       <span class="sec-en">Honors</span>
     </div>
@@ -572,22 +569,6 @@
         <span class="ic"><svg><use href="#i-star"/></svg></span>
         <div><div class="yr">2024 年</div><div class="name">重庆医科大学“人福麻醉先锋奖学金”</div></div>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ 06 自我评价 ============ -->
-  <section class="section" id="about">
-    <div class="sec-head">
-      <span class="sec-num">06</span>
-      <h2 class="sec-title">自我评价</h2>
-      <span class="sec-en">About Me</span>
-    </div>
-    <div class="sec-rule"></div>
-    <div class="about-card">
-      <p><span class="p-num">01</span>一心学医、信念坚定的<span class="kw">赶路人</span>，敬畏生命、热爱医学，深知医路漫长却始终坚定，愿以恒心与仁心踏实地走好每一步。</p>
-      <p><span class="p-num">02</span>学业扎实、精益求精的<span class="kw">笃学者</span>，基础牢固、勤学善思，成绩优异、名列前茅，专业功底深厚、视野开阔，勤勉自律、追求卓越。</p>
-      <p><span class="p-num">03</span>敢想敢为、脚踏实地的<span class="kw">求真者</span>，勤于动手、善于钻研，注重方法、严谨求实，在文献与实验中不断打磨与锤炼科学思维。</p>
-      <p><span class="p-num">04</span>乐于奉献、善于统筹的<span class="kw">领头雁</span>，勇挑重担、以身作则，善于团结同学、凝聚团队，乐于助人、待人真诚，用责任心服务师生。</p>
     </div>
   </section>
 
